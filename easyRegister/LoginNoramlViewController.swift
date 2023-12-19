@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+
+var myName = ""
+var myMail = ""
+var myPhone2 = ""
+var myPhone3 = ""
 var test = ""
 
 class LoginNoramlViewController: UIViewController {
@@ -37,6 +42,13 @@ class LoginNoramlViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        downloadJSON { [self] in
+            
+            print("success")
+        }
+        
         self.view.backgroundColor = .white
         
         let statusBar = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN.WIDTH, height: STATUS_BAR_HEIGHT))
@@ -53,6 +65,8 @@ class LoginNoramlViewController: UIViewController {
     }
     
     
+   
+    
     
     func setImage() {
         loginLabel = UILabel(frame: CGRect(x: self.view.frame.size.width / 2.2, y: naviBar.frame.maxY + 40, width: 100, height: 50))
@@ -62,6 +76,9 @@ class LoginNoramlViewController: UIViewController {
         
         idTF = UITextField(frame: CGRect(x: 60, y: loginLabel.frame.maxY + 20, width: self.view.frame.size.width - 120, height: 70))
         idTF.placeholder = " ID"
+        
+        idTF.text = myName
+        
 //        idTF.layer.borderWidth = 1
         idTF.layer.cornerRadius = 8
         idTF.layer.addBorder([.bottom], color: .lightGray, width: 1)
@@ -157,3 +174,27 @@ class LoginNoramlViewController: UIViewController {
     
     
 }
+
+
+
+private func downloadJSON(completed: @escaping () -> ()){
+     let url = URL(string: "https://ezv.kr:4447/shin/json/result_menu.json")
+    URLSession.shared.dataTask(with: url!){ json, response, err in
+         if err == nil{
+             do{
+                 let movieArray = try JSONDecoder().decode(JsonData.self, from: json!)
+            
+               
+                     
+                     completed()
+                     
+                                             
+             } catch  (let error) {
+                 
+             }
+                 
+                 
+       
+         }
+     }.resume()
+ }

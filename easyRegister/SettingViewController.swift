@@ -111,7 +111,18 @@ extension SettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 3 {
+            let validVC =  secessionViewController()
+            validVC.modalPresentationStyle = .fullScreen
+            present(validVC, animated: false, completion: nil)
+        }
+    }
 }
+
+
+
 
 extension SettingViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {

@@ -56,6 +56,8 @@ class mainTitleCollectionViewCell: UICollectionViewCell {
         cellTextLabel.topAnchor.constraint(equalTo: img.bottomAnchor).isActive = true
         
         
+        
+        
         img.frame = self.bounds
         img.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         img.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true

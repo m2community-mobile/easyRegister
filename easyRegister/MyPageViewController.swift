@@ -89,12 +89,12 @@ class MyPageViewController: UIViewController {
         
         
         heartBtn = UIButton(frame: CGRect(x: 40, y: joinBtn.frame.maxY + 20, width: self.view.frame.width - 80, height: 70))
-        heartBtn.setTitle("관심 있는 생사", for: .normal)
+        heartBtn.setTitle("관심 있는 행사", for: .normal)
         heartBtn.backgroundColor = #colorLiteral(red: 0.901861608, green: 0.9170868397, blue: 0.9425587654, alpha: 1)
 
         heartBtn.layer.cornerRadius = 8
         heartBtn.layer.borderWidth = 1
-//        heartBtn.addTarget(self, action: #selector(test(_ :)), for: .touchUpInside)
+        heartBtn.addTarget(self, action: #selector(goHeartEvent(_ :)), for: .touchUpInside)
         
         self.view.addSubview(heartBtn)
         
@@ -105,13 +105,21 @@ class MyPageViewController: UIViewController {
 
         quesntBtn.layer.cornerRadius = 8
         quesntBtn.layer.borderWidth = 1
-//        sdsdsds
+
         
         self.view.addSubview(quesntBtn)
     }
     
     @objc func goJoinEvent(_ sender: UIButton) {
         let vc = JoinEventViewController()
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false)
+        
+    }
+    
+    @objc func goHeartEvent(_ sender: UIButton) {
+        let vc = HeartEventViewController()
         
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false)

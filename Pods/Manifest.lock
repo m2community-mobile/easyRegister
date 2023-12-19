@@ -3,13 +3,26 @@ PODS:
   - BlueCryptor (1.0.32)
   - BlueECC (1.2.5)
   - BlueRSA (1.0.200)
+  - FLAnimatedImage (1.0.17)
   - FontAwesome.swift (1.9.1)
+  - GoogleMaps (7.4.0):
+    - GoogleMaps/Maps (= 7.4.0)
+  - GoogleMaps/Base (7.4.0)
+  - GoogleMaps/Maps (7.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
   - KeychainSwift (13.0.0)
   - KituraContracts (1.2.1):
     - LoggerAPI (~> 1.7)
   - LoggerAPI (1.9.200):
     - Logging (~> 1.1)
   - Logging (1.4.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
   - SnapKit (5.6.0)
   - SwiftJWT (3.6.200):
     - BlueCryptor (~> 1.0)
@@ -21,7 +34,11 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - FontAwesome.swift (= 1.9.1)
+  - GoogleMaps
+  - GooglePlaces
   - KeychainSwift (~> 13.0)
+  - SDWebImage (~> 4.0)
+  - SDWebImage/GIF (= 4.4.8)
   - SnapKit
   - SwiftJWT
 
@@ -31,11 +48,15 @@ SPEC REPOS:
     - BlueCryptor
     - BlueECC
     - BlueRSA
+    - FLAnimatedImage
     - FontAwesome.swift
+    - GoogleMaps
+    - GooglePlaces
     - KeychainSwift
     - KituraContracts
     - LoggerAPI
     - Logging
+    - SDWebImage
     - SnapKit
     - SwiftJWT
 
@@ -44,14 +65,18 @@ SPEC CHECKSUMS:
   BlueCryptor: b0aee3d9b8f367b49b30de11cda90e1735571c24
   BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
   BlueRSA: dfeef51db96bcc4edec654956c1581adbda4e6a3
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
   FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
   KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   KituraContracts: e845e60dc8627ad0a76fa55ef20a45451d8f830b
   LoggerAPI: ad9c4a6f1e32f518fdb43a1347ac14d765ab5e3d
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftJWT: 88c412708f58c169d431d344c87bc79a87c830ae
 
-PODFILE CHECKSUM: 56efd9c051c1dfa1c2ab4a4a519398a0cf6380d1
+PODFILE CHECKSUM: 63d20c1c13851977e695ca8518ae6a360114949c
 
 COCOAPODS: 1.12.1

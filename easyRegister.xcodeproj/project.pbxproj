@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58035A112B0DC192003BE37F /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58035A102B0DC192003BE37F /* CategoryCollectionViewController.swift */; };
+		58035A132B0DC4D9003BE37F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58035A122B0DC4D9003BE37F /* CategoryCollectionViewCell.swift */; };
+		5804BA952B072B0F001BBC2B /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804BA942B072B0F001BBC2B /* QrCodeViewController.swift */; };
 		5816BB7C2AEA52920015D18B /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816BB7B2AEA52920015D18B /* JsonData.swift */; };
 		5816BB802AEA52C20015D18B /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816BB7F2AEA52C20015D18B /* Server.swift */; };
 		582C67242AFC6C07006D153E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C67232AFC6C07006D153E /* TestViewController.swift */; };
@@ -17,13 +20,17 @@
 		583444CD2ADF5DD5001B8EC6 /* categortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583444CC2ADF5DD5001B8EC6 /* categortViewController.swift */; };
 		583444CF2ADF61F7001B8EC6 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583444CE2ADF61F7001B8EC6 /* CarouselCollectionViewCell.swift */; };
 		583444D12ADF9613001B8EC6 /* mainTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583444D02ADF9613001B8EC6 /* mainTitleCollectionViewCell.swift */; };
+		5842F7562B083C8A0013DFD5 /*  secessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842F7552B083C8A0013DFD5 /*  secessionViewController.swift */; };
+		5842F7582B0886970013DFD5 /* MyQrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842F7572B0886970013DFD5 /* MyQrCodeViewController.swift */; };
 		584BF8F22AF5B9DD00E1D52C /* LoginViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF8F12AF5B9DD00E1D52C /* LoginViewControllerView.swift */; };
 		584BF8F82AF5BB5D00E1D52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF8F72AF5BB5D00E1D52C /* LoginViewController.swift */; };
 		584BF8FA2AF5CBA200E1D52C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF8F92AF5CBA200E1D52C /* UserModel.swift */; };
 		584BF8FC2AF5D13D00E1D52C /* SiginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF8FB2AF5D13D00E1D52C /* SiginUpViewController.swift */; };
+		585891A52B18411D000A844F /* FinshPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585891A42B18411D000A844F /* FinshPaymentViewController.swift */; };
 		585BF1B12AFDC173004073F1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585BF1B02AFDC173004073F1 /* SettingViewController.swift */; };
 		585BF1B32AFDC209004073F1 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585BF1B22AFDC209004073F1 /* MyPageTableViewCell.swift */; };
 		585BF1B52AFDCB3A004073F1 /* SingUpNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585BF1B42AFDCB3A004073F1 /* SingUpNormalViewController.swift */; };
+		585C25842B2820FE0097728E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C25832B2820FE0097728E /* QuestionViewController.swift */; };
 		587DFF082B01A6FC00BBCA6E /* IdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587DFF072B01A6FC00BBCA6E /* IdViewController.swift */; };
 		587F8E602AFB85E30078B2FF /* CreaditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F8E5F2AFB85E30078B2FF /* CreaditViewController.swift */; };
 		58B81FCB2AE744D9001AA4DB /* SignValidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B81FC92AE744D9001AA4DB /* SignValidViewController.swift */; };
@@ -43,10 +50,12 @@
 		58E184782ADE71E900A5DAC5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E184772ADE71E800A5DAC5 /* CategoryViewController.swift */; };
 		58E184802ADE734300A5DAC5 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E1847F2ADE734300A5DAC5 /* MyViewController.swift */; };
 		58E184852ADE752700A5DAC5 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E184842ADE752700A5DAC5 /* Define.swift */; };
+		58E67DE12B19CC5800D801E7 /* MyHeartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E67DE02B19CC5800D801E7 /* MyHeartTableViewCell.swift */; };
+		58E67DE32B19D5E100D801E7 /* JoinEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E67DE22B19D5E100D801E7 /* JoinEventViewController.swift */; };
 		58E693A82AE610DC009BC754 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E693A72AE610DC009BC754 /* BaseViewController.swift */; };
 		58E693AA2AE61254009BC754 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E693A92AE61254009BC754 /* DetailedViewController.swift */; };
 		58EF63472B02FCE800A918F8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF63462B02FCE800A918F8 /* CustomTableViewCell.swift */; };
-		58EF636B2B03311100A918F8 /* JoinEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF636A2B03311100A918F8 /* JoinEventViewController.swift */; };
+		58EF636B2B03311100A918F8 /* HeartEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF636A2B03311100A918F8 /* HeartEventViewController.swift */; };
 		87A63DA94852FB6D11738752 /* Pods_easyRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E648C4209CB2A4CC77D56 /* Pods_easyRegister.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +63,9 @@
 		3B2FB14205823E7324D02C77 /* Pods-easyRegister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyRegister.release.xcconfig"; path = "Target Support Files/Pods-easyRegister/Pods-easyRegister.release.xcconfig"; sourceTree = "<group>"; };
 		4F084D05E2458EAA13A56ADA /* Pods-easyRegister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyRegister.debug.xcconfig"; path = "Target Support Files/Pods-easyRegister/Pods-easyRegister.debug.xcconfig"; sourceTree = "<group>"; };
 		563E648C4209CB2A4CC77D56 /* Pods_easyRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58035A102B0DC192003BE37F /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		58035A122B0DC4D9003BE37F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5804BA942B072B0F001BBC2B /* QrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewController.swift; sourceTree = "<group>"; };
 		5816BB7B2AEA52920015D18B /* JsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		5816BB7F2AEA52C20015D18B /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		582C67232AFC6C07006D153E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -64,13 +76,18 @@
 		583444CC2ADF5DD5001B8EC6 /* categortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categortViewController.swift; sourceTree = "<group>"; };
 		583444CE2ADF61F7001B8EC6 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		583444D02ADF9613001B8EC6 /* mainTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		5842F7552B083C8A0013DFD5 /*  secessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " secessionViewController.swift"; sourceTree = "<group>"; };
+		5842F7572B0886970013DFD5 /* MyQrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQrCodeViewController.swift; sourceTree = "<group>"; };
 		584BF8F12AF5B9DD00E1D52C /* LoginViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerView.swift; sourceTree = "<group>"; };
 		584BF8F72AF5BB5D00E1D52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../LoginApp/LoginApp/LoginViewController.swift; sourceTree = "<group>"; };
 		584BF8F92AF5CBA200E1D52C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		584BF8FB2AF5D13D00E1D52C /* SiginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginUpViewController.swift; sourceTree = "<group>"; };
+		585891A42B18411D000A844F /* FinshPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinshPaymentViewController.swift; sourceTree = "<group>"; };
 		585BF1B02AFDC173004073F1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		585BF1B22AFDC209004073F1 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
 		585BF1B42AFDCB3A004073F1 /* SingUpNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpNormalViewController.swift; sourceTree = "<group>"; };
+		585C25832B2820FE0097728E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		5876A9762B0B21B90089B0B1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		587DFF072B01A6FC00BBCA6E /* IdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdViewController.swift; sourceTree = "<group>"; };
 		587F8E5F2AFB85E30078B2FF /* CreaditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaditViewController.swift; sourceTree = "<group>"; };
 		58B81FC92AE744D9001AA4DB /* SignValidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignValidViewController.swift; sourceTree = "<group>"; };
@@ -93,10 +110,12 @@
 		58E184772ADE71E800A5DAC5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		58E1847F2ADE734300A5DAC5 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		58E184842ADE752700A5DAC5 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		58E67DE02B19CC5800D801E7 /* MyHeartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHeartTableViewCell.swift; sourceTree = "<group>"; };
+		58E67DE22B19D5E100D801E7 /* JoinEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEventViewController.swift; sourceTree = "<group>"; };
 		58E693A72AE610DC009BC754 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		58E693A92AE61254009BC754 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		58EF63462B02FCE800A918F8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		58EF636A2B03311100A918F8 /* JoinEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEventViewController.swift; sourceTree = "<group>"; };
+		58EF636A2B03311100A918F8 /* HeartEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +175,8 @@
 				583444CE2ADF61F7001B8EC6 /* CarouselCollectionViewCell.swift */,
 				583444D02ADF9613001B8EC6 /* mainTitleCollectionViewCell.swift */,
 				58EF63462B02FCE800A918F8 /* CustomTableViewCell.swift */,
+				58035A122B0DC4D9003BE37F /* CategoryCollectionViewCell.swift */,
+				58E67DE02B19CC5800D801E7 /* MyHeartTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -201,18 +222,25 @@
 				584BF8FB2AF5D13D00E1D52C /* SiginUpViewController.swift */,
 				58E184672ADE6FEE00A5DAC5 /* TabBarController.swift */,
 				583444CC2ADF5DD5001B8EC6 /* categortViewController.swift */,
+				58035A102B0DC192003BE37F /* CategoryCollectionViewController.swift */,
 				582C672D2AFCBE42006D153E /* MyTableViewCell.swift */,
 				58D0AB0F2AF8D5D7005666F7 /* ViewController.swift */,
 				58E693A72AE610DC009BC754 /* BaseViewController.swift */,
 				58E693A92AE61254009BC754 /* DetailedViewController.swift */,
+				585C25832B2820FE0097728E /* QuestionViewController.swift */,
 				587F8E5F2AFB85E30078B2FF /* CreaditViewController.swift */,
+				585891A42B18411D000A844F /* FinshPaymentViewController.swift */,
 				582C672B2AFC9AA2006D153E /* MyPageViewController.swift */,
 				585BF1B02AFDC173004073F1 /* SettingViewController.swift */,
 				585BF1B22AFDC209004073F1 /* MyPageTableViewCell.swift */,
 				58E1847F2ADE734300A5DAC5 /* MyViewController.swift */,
-				58EF636A2B03311100A918F8 /* JoinEventViewController.swift */,
+				58E67DE22B19D5E100D801E7 /* JoinEventViewController.swift */,
+				58EF636A2B03311100A918F8 /* HeartEventViewController.swift */,
 				582C67232AFC6C07006D153E /* TestViewController.swift */,
+				5804BA942B072B0F001BBC2B /* QrCodeViewController.swift */,
 				582C67252AFC6D63006D153E /* Cell.swift */,
+				5842F7552B083C8A0013DFD5 /*  secessionViewController.swift */,
+				5842F7572B0886970013DFD5 /* MyQrCodeViewController.swift */,
 				584BF8EF2AF5B9AC00E1D52C /* AppleLogin */,
 				5816BB7D2AEA52AF0015D18B /* Srever */,
 				58B81FC82AE744C2001AA4DB /* Data */,
@@ -239,6 +267,7 @@
 		B0FAF4D3A8A0BBCDE4F3E52B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5876A9762B0B21B90089B0B1 /* libz.tbd */,
 				563E648C4209CB2A4CC77D56 /* Pods_easyRegister.framework */,
 			);
 			name = Frameworks;
@@ -256,6 +285,7 @@
 				58E1845D2ADE6FEE00A5DAC5 /* Frameworks */,
 				58E1845E2ADE6FEE00A5DAC5 /* Resources */,
 				33E0F3DE2E7E01E1C1575FCF /* [CP] Embed Pods Frameworks */,
+				8A004E0FF8941266A241CDB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,6 +382,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8A004E0FF8941266A241CDB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easyRegister/Pods-easyRegister-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easyRegister/Pods-easyRegister-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-easyRegister/Pods-easyRegister-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -361,23 +408,27 @@
 			files = (
 				583444CF2ADF61F7001B8EC6 /* CarouselCollectionViewCell.swift in Sources */,
 				58E184802ADE734300A5DAC5 /* MyViewController.swift in Sources */,
+				5804BA952B072B0F001BBC2B /* QrCodeViewController.swift in Sources */,
 				58E693AA2AE61254009BC754 /* DetailedViewController.swift in Sources */,
 				58E693A82AE610DC009BC754 /* BaseViewController.swift in Sources */,
 				585BF1B12AFDC173004073F1 /* SettingViewController.swift in Sources */,
+				585C25842B2820FE0097728E /* QuestionViewController.swift in Sources */,
 				58E184682ADE6FEE00A5DAC5 /* TabBarController.swift in Sources */,
 				587F8E602AFB85E30078B2FF /* CreaditViewController.swift in Sources */,
 				58D0AB142AF8D606005666F7 /* ListSection.swift in Sources */,
 				58E184782ADE71E900A5DAC5 /* CategoryViewController.swift in Sources */,
 				5816BB7C2AEA52920015D18B /* JsonData.swift in Sources */,
 				582C67302AFCDA53006D153E /* LoginNoramlViewController.swift in Sources */,
-				58EF636B2B03311100A918F8 /* JoinEventViewController.swift in Sources */,
+				58EF636B2B03311100A918F8 /* HeartEventViewController.swift in Sources */,
 				582C67262AFC6D63006D153E /* Cell.swift in Sources */,
 				58E184642ADE6FEE00A5DAC5 /* AppDelegate.swift in Sources */,
 				584BF8FC2AF5D13D00E1D52C /* SiginUpViewController.swift in Sources */,
 				585BF1B52AFDCB3A004073F1 /* SingUpNormalViewController.swift in Sources */,
 				58D0AB122AF8D601005666F7 /* MockData.swift in Sources */,
+				5842F7582B0886970013DFD5 /* MyQrCodeViewController.swift in Sources */,
 				584BF8FA2AF5CBA200E1D52C /* UserModel.swift in Sources */,
 				58D0AB102AF8D5D7005666F7 /* ViewController.swift in Sources */,
+				58E67DE32B19D5E100D801E7 /* JoinEventViewController.swift in Sources */,
 				58EF63472B02FCE800A918F8 /* CustomTableViewCell.swift in Sources */,
 				58E184852ADE752700A5DAC5 /* Define.swift in Sources */,
 				5816BB802AEA52C20015D18B /* Server.swift in Sources */,
@@ -388,13 +439,18 @@
 				58D0AB1B2AF8D638005666F7 /* StoryCollectionViewCell.swift in Sources */,
 				583444CD2ADF5DD5001B8EC6 /* categortViewController.swift in Sources */,
 				582C672E2AFCBE42006D153E /* MyTableViewCell.swift in Sources */,
+				58035A112B0DC192003BE37F /* CategoryCollectionViewController.swift in Sources */,
 				587DFF082B01A6FC00BBCA6E /* IdViewController.swift in Sources */,
+				5842F7562B083C8A0013DFD5 /*  secessionViewController.swift in Sources */,
+				58E67DE12B19CC5800D801E7 /* MyHeartTableViewCell.swift in Sources */,
 				584BF8F82AF5BB5D00E1D52C /* LoginViewController.swift in Sources */,
 				58D0AB1A2AF8D638005666F7 /* PortraitCollectionViewCell.swift in Sources */,
 				585BF1B32AFDC209004073F1 /* MyPageTableViewCell.swift in Sources */,
+				585891A52B18411D000A844F /* FinshPaymentViewController.swift in Sources */,
 				58B81FCB2AE744D9001AA4DB /* SignValidViewController.swift in Sources */,
 				58E184662ADE6FEE00A5DAC5 /* SceneDelegate.swift in Sources */,
 				58D0AB192AF8D638005666F7 /* LandscapeCollectionViewCell.swift in Sources */,
+				58035A132B0DC4D9003BE37F /* CategoryCollectionViewCell.swift in Sources */,
 				583444D12ADF9613001B8EC6 /* mainTitleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

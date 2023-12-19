@@ -11,9 +11,10 @@ final class PortraitCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var cellTitleLbl: UILabel!
     
-    func setup(_ item: Banner) {
-        cellImageView.image = UIImage(named: item.imgSrc)
-        cellTitleLbl.text = item.id
+    func setup(_ item: DataClass) {
+//        cellImageView.image = UIImage(named: item.imgSrc)
+        cellTitleLbl.text = "test"
+       
     }
     
     override func prepareForReuse() {

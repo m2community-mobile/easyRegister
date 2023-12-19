@@ -49,6 +49,10 @@ class BaseViewController: UIViewController {
     var subTitleStrings = ""
     var subTitleIn : UILabel!
     
+    //dateString 1
+    var dateString = ""
+    
+    
     
     
 //    var subTitleLabel : UILabel!
@@ -92,7 +96,7 @@ class BaseViewController: UIViewController {
 
         scrollView.addSubview(labelTwo)
         labelTwo.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 40).isActive = true
-        labelTwo.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 2000).isActive = true
+        labelTwo.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 3000).isActive = true
         labelTwo.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -40).isActive = true
         
         
@@ -115,7 +119,7 @@ class BaseViewController: UIViewController {
 //        subTitleIn.text = subTitleStrings
 //        scrollView.addSubview(subTitleIn)
         
-       
+        
         
         
         
@@ -163,7 +167,7 @@ class BaseViewController: UIViewController {
         
         testButton.setTitle("신청하기", for: .normal)
         testButton.setTitleColor(.white, for: .normal)
-//        testButton.addTarget(self, action: #selector(test), for: .touchUpInside)
+        testButton.addTarget(self, action: #selector(go(_ :)), for: .touchUpInside)
         footer.addSubview(testButton)
         
         
@@ -197,7 +201,9 @@ class BaseViewController: UIViewController {
         
         
     }
-    
+    @objc func go(_ sender: UIButton){
+        
+    }
     
     
     @objc func callMethod(){

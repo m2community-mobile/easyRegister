@@ -9,13 +9,12 @@ import UIKit
 
 final class CollectionViewHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var cellTitleLbl: UILabel!
-    
+    var titleData = [Menu]()
     func setup(_ title: String) {
         cellTitleLbl.text = title
-    }
-    override func prepareForReuse() {
-        super.prepareForReuse()
         
+
+       
         
     }
 }

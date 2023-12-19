@@ -16,7 +16,10 @@ class categortViewController: UIViewController {
     
     var tableView: UITableView = UITableView()
 
-    let data = ["전체행사", "무료행사", "세미나", "컨퍼런스", "연수교육", "워크샵"]
+    var categoryList = [CategoryEtc]()
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +45,37 @@ class categortViewController: UIViewController {
         // Do any additional setup after loading the view.
         setTableView()
         
+        CategoryDownloadJSON { [self] in
+            
+            print("success")
+            
+            
+        }
+        
         
     }
+
+    
+    
+    private func CategoryDownloadJSON(completed: @escaping () -> ()){
+         let url = URL(string: "https://ezv.kr:4447/shin/json/result_category.json")
+        URLSession.shared.dataTask(with: url!){ [self] data, response, err in
+             if err == nil{
+                 do{
+                     let list = try JSONDecoder().decode(CategoryList.self, from: data!)
+//                     self.jsonData = list.data.topBanner.banner
+                     self.categoryList = list.data.category
+                     print("list.data.category\(list.data.category)")
+                  
+                     
+                 }catch{
+                     print("error fetching data from api")
+                 }
+             }
+         }.resume()
+     }
+    
+    
     
     func setTableView() {
         tableView.dataSource = self
@@ -67,13 +99,13 @@ class categortViewController: UIViewController {
 
 extension categortViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return categoryList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: MyTableViewCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as? MyTableViewCell else { return UITableViewCell() }
         cell.row = indexPath.row
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = categoryList[indexPath.row].title
         print("cellForRowAt: \(indexPath.row)")
         
         return cell
@@ -81,6 +113,12 @@ extension categortViewController: UITableViewDataSource {
 }
 
 extension categortViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let validVC = CategoryCollectionViewController()
+        validVC.modalPresentationStyle = .fullScreen
+        present(validVC, animated: false, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         print("willDisplay: \(indexPath.row)")
     }

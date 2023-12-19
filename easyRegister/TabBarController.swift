@@ -20,6 +20,22 @@ class TabBarController: UITabBarController {
         setupTabbarItem()
         setTabBarBackgroundColor()
     
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.1840982735, green: 0.2072379291, blue: 0.2327308357, alpha: 1)
+            UITabBar.appearance().tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            UITabBar.appearance().isTranslucent = true
+
+        
+        
+            if #available(iOS 15.0, *) {
+                let appearance = UITabBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                appearance.backgroundColor = #colorLiteral(red: 0.1840982735, green: 0.2072379291, blue: 0.2327308357, alpha: 1)
+                UITabBar.appearance().standardAppearance = appearance
+                UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance
+                tabBarItem.image = tabBarItem.image?.withRenderingMode(.alwaysOriginal)
+
+                                 tabBarItem.selectedImage = tabBarItem.selectedImage?.withRenderingMode(.alwaysOriginal)
+            }
         
         
     }

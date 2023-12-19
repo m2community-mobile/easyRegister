@@ -18,7 +18,8 @@ struct MockData {
     
 
     private let stories: ListSection = {
-        .stories([.init(id: "", imgSrc: "profile-1")])
+        .stories([.init(famousCategory: FamousCategory(category: [Category(id: "", title: "")]), topBanner: TopBanner(cnt: 0, banner: [Banner(id: "", imgSrc: "")]), menuList: MenuList(menu: [Menu(id: "", title: "", subTitle: "", index: "", type: "", cnt: "", item: [Item(id: "", eventDate: "", likeYn: "", imgSrc: "", title: "", itemSubTitle: "", discount: "", discountCode: "", originalPrice: "", discountRate: "", discountPrice: "", subTitle: "")])]))])
+//        .stories([.init(id: "", imgSrc: "")])
 //                  .init(id: "", imgSrc: "profile-2"),
 //                  .init(id: "", imgSrc: "profile-3"),
 //                  .init(id: "", imgSrc: "profile-4"),
@@ -30,10 +31,10 @@ struct MockData {
 //
     private let popular: ListSection = {
 //
+        .popular([.init(famousCategory: FamousCategory(category: [Category(id: "", title: "")]), topBanner: TopBanner(cnt: 0, banner: [Banner(id: "", imgSrc: "")]), menuList: MenuList(menu: [Menu(id: "", title: "", subTitle: "", index: "", type: "", cnt: "", item: [Item(id: "", eventDate: "", likeYn: "", imgSrc: "", title: "", itemSubTitle: "", discount: "", discountCode: "", originalPrice: "", discountRate: "", discountPrice: "", subTitle: "")])]))])
 //
 //
-//
-        .popular([.init(id: "", imgSrc: "")])
+//        .popular([.init(id: "", imgSrc: "")])
 //                  .init(id: "", imgSrc: ""),
 //                  .init(id: "", imgSrc: "")
 //                  ])
@@ -45,7 +46,8 @@ struct MockData {
     }()
 //
     private let comingSoon: ListSection = {
-        .comingSoon([.init(id: "Tokyo Ghoul", imgSrc: "soon-1")])
+        .comingSoon([.init(famousCategory: FamousCategory(category: [Category(id: "", title: "")]), topBanner: TopBanner(cnt: 0, banner: [Banner(id: "", imgSrc: "")]), menuList: MenuList(menu: [Menu(id: "", title: "", subTitle: "", index: "", type: "", cnt: "", item: [Item(id: "", eventDate: "", likeYn: "", imgSrc: "", title: "", itemSubTitle: "", discount: "", discountCode: "", originalPrice: "", discountRate: "", discountPrice: "", subTitle: "")])]))])
+        
 //                     .init(id: "Record of Ragnarok", imgSrc: "soon-2"),
 //                     .init(id: "Kaisen Returns", imgSrc: "soon-3"),
 //                     .init(id: "No Idea", imgSrc: "soon-4"),
@@ -54,6 +56,7 @@ struct MockData {
 
     var pageData: [ListSection] {
 //        [popular, comingSoon, popular, stories]
-        return [stories, comingSoon, comingSoon, popular, comingSoon, popular, comingSoon]
+//        return [stories, comingSoon, popular]
+        return [stories, comingSoon, popular, comingSoon, comingSoon, popular, comingSoon]
     }
 }

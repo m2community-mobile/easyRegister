@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+
+
+
 class SingUpNormalViewController: UIViewController {
     
     var logoImage: UIImageView!
@@ -172,6 +175,10 @@ class SingUpNormalViewController: UIViewController {
         nameTf.placeholder = ""
         nameTf.layer.borderWidth = 1
         nameTf.layer.cornerRadius = 8
+        
+        
+        
+        
         //        nameTf.layer.addBorder([.bottom], color: .lightGray, width: 1)
         scrollView.addSubview(nameTf)
         
@@ -478,6 +485,16 @@ class SingUpNormalViewController: UIViewController {
     }
   
     @objc func testo(_ sender: UIButton) {
+        
+        UserDefaults.standard.set(nameTf.text, forKey: "myname")
+        myName = UserDefaults.standard.string(forKey: "myname")!
+        print("zxc\(myName)")
+        
+        let vc = LoginNoramlViewController()
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false)
+        
         print("tab")
     }
     

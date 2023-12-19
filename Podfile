@@ -16,6 +16,13 @@ pod 'SwiftJWT'
 
 pod 'Alamofire'
 
+pod 'GoogleMaps'
+
+pod 'GooglePlaces'
+
+
+ pod 'SDWebImage', '~> 4.0'
+  pod 'SDWebImage/GIF', '4.4.8'
   # Pods for easyRegister
 
 end
